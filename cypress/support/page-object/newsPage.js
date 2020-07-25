@@ -19,6 +19,15 @@ class NewsPage{
     getAllContentNews(){
         return cy.get('[data-testid=page-body] > :nth-child(4)');
     }
+
+    getFilterLink(){
+        return cy.get('[data-testid=news-filter-button]');
+    }
+
+    getWebinarOption(){
+         return cy.get('div:nth-of-type(2) > .pb_news_filter__itemLabel_1iwa');
+
+    }
 }
 
 export default new NewsPage();
