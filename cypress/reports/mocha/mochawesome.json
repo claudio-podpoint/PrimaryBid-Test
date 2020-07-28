@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-28T09:13:48.052Z",
+    "end": "2020-07-28T09:13:58.505Z",
+    "duration": 10453,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3aa439a-c83e-4d1b-b16d-1e172706fb85",
+      "title": "",
+      "fullFile": "cypress/integration/examples/aboutUsLink.spec.js",
+      "file": "cypress/integration/examples/aboutUsLink.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "adfce75d-902d-4dc8-9a95-63f0ec11b35a",
+          "title": "Navigate to the About Us page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should click on the AboutUs link and display the About Us page",
+              "fullTitle": "Navigate to the About Us page should click on the AboutUs link and display the About Us page",
+              "timedOut": null,
+              "duration": 8735,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_aboutusPage[\"default\"].getAboutUsLink().click();\ncy.location('pathname').should('eq', '/about');\n_aboutusPage[\"default\"].getOurMissionHeader().should('contain', 'Our mission.');",
+              "err": {},
+              "uuid": "d0363141-5f1d-47e3-ae1d-71a90f79986c",
+              "parentUUID": "adfce75d-902d-4dc8-9a95-63f0ec11b35a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d0363141-5f1d-47e3-ae1d-71a90f79986c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8735,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

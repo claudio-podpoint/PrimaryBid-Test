@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-28T09:14:18.825Z",
+    "end": "2020-07-28T09:14:48.014Z",
+    "duration": 29189,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fefbfaf5-2de2-440c-bd03-40c694ce74f9",
+      "title": "",
+      "fullFile": "cypress/integration/examples/newsLink.spec.js",
+      "file": "cypress/integration/examples/newsLink.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a04f4d1f-799d-4a18-904d-685947ec3f09",
+          "title": "Navigate to the News page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should click on News link and display the News page",
+              "fullTitle": "Navigate to the News page should click on News link and display the News page",
+              "timedOut": null,
+              "duration": 9203,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.location('pathname').should('eq', '/news');\n_newsPage[\"default\"].getFeaturedContentHeader().should('have.text', 'Featured Content');",
+              "err": {},
+              "uuid": "9233cf2f-f097-4eea-9072-f6619186c567",
+              "parentUUID": "a04f4d1f-799d-4a18-904d-685947ec3f09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should contain news items for the Featured Content section",
+              "fullTitle": "Navigate to the News page should contain news items for the Featured Content section",
+              "timedOut": null,
+              "duration": 4428,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_newsPage[\"default\"].getFeaturedContentHeader().should('have.text', 'Featured Content');\n_newsPage[\"default\"].getNewsContent().should('contain', 'PrimaryBid triumphs in retail campaign');",
+              "err": {},
+              "uuid": "f611036f-ed29-4f9f-866c-a7aa45f3fce9",
+              "parentUUID": "a04f4d1f-799d-4a18-904d-685947ec3f09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should contain news items for the All content section",
+              "fullTitle": "Navigate to the News page should contain news items for the All content section",
+              "timedOut": null,
+              "duration": 7189,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_newsPage[\"default\"].getAllContentHeader().should('have.text', 'All Content');\n_newsPage[\"default\"].getNewsContent().should('contain', 'Ocado raises £1bn as online grocery booms');",
+              "err": {},
+              "uuid": "fd255e06-ec1b-4348-be74-028b3fd7614a",
+              "parentUUID": "a04f4d1f-799d-4a18-904d-685947ec3f09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "All Content section can be filtered by Webinar",
+              "fullTitle": "Navigate to the News page All Content section can be filtered by Webinar",
+              "timedOut": null,
+              "duration": 6694,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_newsPage[\"default\"].getFilterLink().trigger('mouseover').click();\n_newsPage[\"default\"].getWebinarOption().should('be.hidden').click({\n  force: true\n});",
+              "err": {},
+              "uuid": "a6c3c448-5a4c-4118-aecc-78002765d6a3",
+              "parentUUID": "a04f4d1f-799d-4a18-904d-685947ec3f09",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9233cf2f-f097-4eea-9072-f6619186c567",
+            "f611036f-ed29-4f9f-866c-a7aa45f3fce9",
+            "fd255e06-ec1b-4348-be74-028b3fd7614a",
+            "a6c3c448-5a4c-4118-aecc-78002765d6a3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 27514,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

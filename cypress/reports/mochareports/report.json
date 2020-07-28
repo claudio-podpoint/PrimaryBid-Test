@@ -1,0 +1,362 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 8,
+    "passes": 7,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-07-28T09:16:52.731Z",
+    "end": "2020-07-28T09:16:52.731Z",
+    "duration": 142452,
+    "testsRegistered": 8,
+    "passPercent": 87.5,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a3aa439a-c83e-4d1b-b16d-1e172706fb85",
+      "title": "",
+      "fullFile": "cypress/integration/examples/aboutUsLink.spec.js",
+      "file": "cypress/integration/examples/aboutUsLink.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "adfce75d-902d-4dc8-9a95-63f0ec11b35a",
+          "title": "Navigate to the About Us page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should click on the AboutUs link and display the About Us page",
+              "fullTitle": "Navigate to the About Us page should click on the AboutUs link and display the About Us page",
+              "timedOut": null,
+              "duration": 8735,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_aboutusPage[\"default\"].getAboutUsLink().click();\ncy.location('pathname').should('eq', '/about');\n_aboutusPage[\"default\"].getOurMissionHeader().should('contain', 'Our mission.');",
+              "err": {},
+              "uuid": "d0363141-5f1d-47e3-ae1d-71a90f79986c",
+              "parentUUID": "adfce75d-902d-4dc8-9a95-63f0ec11b35a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d0363141-5f1d-47e3-ae1d-71a90f79986c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8735,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c95c5017-6895-4c39-94aa-0952aecad4f8",
+      "title": "",
+      "fullFile": "cypress/integration/examples/faqLink.spec.js",
+      "file": "cypress/integration/examples/faqLink.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c9a74fdd-15a2-4677-8adf-78dee61d4af5",
+          "title": "Navigate to the FAQ's page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should navigate to the FAQ's link",
+              "fullTitle": "Navigate to the FAQ's page should navigate to the FAQ's link",
+              "timedOut": null,
+              "duration": 7603,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_faqsPage[\"default\"].getFaqsLink().click();\ncy.location('pathname').should('eq', '/faqs');\n_faqsPage[\"default\"].getFaqsHeaderLink().should('contain', 'Frequently Asked Questions');",
+              "err": {},
+              "uuid": "db8a90e3-6e81-440c-aece-180aa219d57a",
+              "parentUUID": "c9a74fdd-15a2-4677-8adf-78dee61d4af5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "db8a90e3-6e81-440c-aece-180aa219d57a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7603,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "fefbfaf5-2de2-440c-bd03-40c694ce74f9",
+      "title": "",
+      "fullFile": "cypress/integration/examples/newsLink.spec.js",
+      "file": "cypress/integration/examples/newsLink.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a04f4d1f-799d-4a18-904d-685947ec3f09",
+          "title": "Navigate to the News page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should click on News link and display the News page",
+              "fullTitle": "Navigate to the News page should click on News link and display the News page",
+              "timedOut": null,
+              "duration": 9203,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.location('pathname').should('eq', '/news');\n_newsPage[\"default\"].getFeaturedContentHeader().should('have.text', 'Featured Content');",
+              "err": {},
+              "uuid": "9233cf2f-f097-4eea-9072-f6619186c567",
+              "parentUUID": "a04f4d1f-799d-4a18-904d-685947ec3f09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should contain news items for the Featured Content section",
+              "fullTitle": "Navigate to the News page should contain news items for the Featured Content section",
+              "timedOut": null,
+              "duration": 4428,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_newsPage[\"default\"].getFeaturedContentHeader().should('have.text', 'Featured Content');\n_newsPage[\"default\"].getNewsContent().should('contain', 'PrimaryBid triumphs in retail campaign');",
+              "err": {},
+              "uuid": "f611036f-ed29-4f9f-866c-a7aa45f3fce9",
+              "parentUUID": "a04f4d1f-799d-4a18-904d-685947ec3f09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should contain news items for the All content section",
+              "fullTitle": "Navigate to the News page should contain news items for the All content section",
+              "timedOut": null,
+              "duration": 7189,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_newsPage[\"default\"].getAllContentHeader().should('have.text', 'All Content');\n_newsPage[\"default\"].getNewsContent().should('contain', 'Ocado raises £1bn as online grocery booms');",
+              "err": {},
+              "uuid": "fd255e06-ec1b-4348-be74-028b3fd7614a",
+              "parentUUID": "a04f4d1f-799d-4a18-904d-685947ec3f09",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "All Content section can be filtered by Webinar",
+              "fullTitle": "Navigate to the News page All Content section can be filtered by Webinar",
+              "timedOut": null,
+              "duration": 6694,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_newsPage[\"default\"].getFilterLink().trigger('mouseover').click();\n_newsPage[\"default\"].getWebinarOption().should('be.hidden').click({\n  force: true\n});",
+              "err": {},
+              "uuid": "a6c3c448-5a4c-4118-aecc-78002765d6a3",
+              "parentUUID": "a04f4d1f-799d-4a18-904d-685947ec3f09",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9233cf2f-f097-4eea-9072-f6619186c567",
+            "f611036f-ed29-4f9f-866c-a7aa45f3fce9",
+            "fd255e06-ec1b-4348-be74-028b3fd7614a",
+            "a6c3c448-5a4c-4118-aecc-78002765d6a3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 27514,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "311bbe23-848c-43d7-b05f-0de64159e53f",
+      "title": "",
+      "fullFile": "cypress/integration/examples/signup.spec.js",
+      "file": "cypress/integration/examples/signup.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "624015ac-74c6-44ef-b3da-29a2e14c9e70",
+          "title": "Navigate to the Sign up page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should click on the SignUp link and display the SignUp page",
+              "fullTitle": "Navigate to the Sign up page should click on the SignUp link and display the SignUp page",
+              "timedOut": null,
+              "duration": 3306,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_signupPage[\"default\"].getSignupLink().click();\ncy.location('pathname').should('eq', '/user/signup');",
+              "err": {},
+              "uuid": "ee32b121-dd6e-4380-940b-49868c525315",
+              "parentUUID": "624015ac-74c6-44ef-b3da-29a2e14c9e70",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Data submitted to the sign up page directs the user to the details page",
+              "fullTitle": "Navigate to the Sign up page Data submitted to the sign up page directs the user to the details page",
+              "timedOut": null,
+              "duration": 95294,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_signupPage[\"default\"].getSignupLink().click(); // generating random email & password\n\nvar randomEmail = faker.internet.email();\nvar randomPassword = faker.internet.password(); // entering user email, password & retypePassword\n_signupPage[\"default\"].enterUserEmail().type(randomEmail).should('have.value', randomEmail);\n_signupPage[\"default\"].enterUserPassword().type(randomPassword).should('have.value', randomPassword);\n_signupPage[\"default\"].retypePassword().type(randomPassword).should('have.value', randomPassword); // click the submit button and assert user details page is displayed\n\n_signupPage[\"default\"].getSubmitButton().click();\ncy.location('pathname').should('eq', '/user/personal-details');\n_signupPage[\"default\"].getUserDetailsPageHeader().should('have.text', 'Welcome to PrimaryBid');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected '/user/signup' to equal '/user/personal-details'",
+                "estack": "AssertionError: Timed out retrying: expected '/user/signup' to equal '/user/personal-details'\n    at Context.eval (https://playground.primarybid.com/__cypress/tests?p=cypress/integration/examples/signup.spec.js:70:29)",
+                "diff": "- '/user/signup'\n+ '/user/personal-details'\n"
+              },
+              "uuid": "f9da2612-b95d-4b73-8114-e6e36acbac7c",
+              "parentUUID": "624015ac-74c6-44ef-b3da-29a2e14c9e70",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ee32b121-dd6e-4380-940b-49868c525315"
+          ],
+          "failures": [
+            "f9da2612-b95d-4b73-8114-e6e36acbac7c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 98600,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

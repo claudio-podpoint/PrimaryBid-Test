@@ -3,10 +3,20 @@
 <!-- create a cypress.env.json to store your values for the url and user auth details -->
 <!-- create a private repo -->
 
-##Instalation
+# Instalation
+#### Git clone the repo
 
-# Git clone the repository
-# In the terminal type: npm install
-# npx cypress open
-# select any test spec you wish to run
-# record your test: npx cypress run --record
+## Install dependencies
+
+####  npm install
+
+## Open Cypress DashBoard
+#### npx cypress open
+
+## Run mochawesomeReports
+
+#### npm run test
+
+# Instructions 
+
+#### the test use the page object model

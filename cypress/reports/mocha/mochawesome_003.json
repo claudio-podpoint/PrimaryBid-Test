@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-07-28T09:14:57.407Z",
+    "end": "2020-07-28T09:16:38.985Z",
+    "duration": 101578,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "311bbe23-848c-43d7-b05f-0de64159e53f",
+      "title": "",
+      "fullFile": "cypress/integration/examples/signup.spec.js",
+      "file": "cypress/integration/examples/signup.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "624015ac-74c6-44ef-b3da-29a2e14c9e70",
+          "title": "Navigate to the Sign up page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should click on the SignUp link and display the SignUp page",
+              "fullTitle": "Navigate to the Sign up page should click on the SignUp link and display the SignUp page",
+              "timedOut": null,
+              "duration": 3306,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_signupPage[\"default\"].getSignupLink().click();\ncy.location('pathname').should('eq', '/user/signup');",
+              "err": {},
+              "uuid": "ee32b121-dd6e-4380-940b-49868c525315",
+              "parentUUID": "624015ac-74c6-44ef-b3da-29a2e14c9e70",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Data submitted to the sign up page directs the user to the details page",
+              "fullTitle": "Navigate to the Sign up page Data submitted to the sign up page directs the user to the details page",
+              "timedOut": null,
+              "duration": 95294,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_signupPage[\"default\"].getSignupLink().click(); // generating random email & password\n\nvar randomEmail = faker.internet.email();\nvar randomPassword = faker.internet.password(); // entering user email, password & retypePassword\n_signupPage[\"default\"].enterUserEmail().type(randomEmail).should('have.value', randomEmail);\n_signupPage[\"default\"].enterUserPassword().type(randomPassword).should('have.value', randomPassword);\n_signupPage[\"default\"].retypePassword().type(randomPassword).should('have.value', randomPassword); // click the submit button and assert user details page is displayed\n\n_signupPage[\"default\"].getSubmitButton().click();\ncy.location('pathname').should('eq', '/user/personal-details');\n_signupPage[\"default\"].getUserDetailsPageHeader().should('have.text', 'Welcome to PrimaryBid');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected '/user/signup' to equal '/user/personal-details'",
+                "estack": "AssertionError: Timed out retrying: expected '/user/signup' to equal '/user/personal-details'\n    at Context.eval (https://playground.primarybid.com/__cypress/tests?p=cypress/integration/examples/signup.spec.js:70:29)",
+                "diff": "- '/user/signup'\n+ '/user/personal-details'\n"
+              },
+              "uuid": "f9da2612-b95d-4b73-8114-e6e36acbac7c",
+              "parentUUID": "624015ac-74c6-44ef-b3da-29a2e14c9e70",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ee32b121-dd6e-4380-940b-49868c525315"
+          ],
+          "failures": [
+            "f9da2612-b95d-4b73-8114-e6e36acbac7c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 98600,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

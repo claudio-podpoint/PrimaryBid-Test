@@ -26,7 +26,6 @@ class NewsPage{
 
     getWebinarOption(){
          return cy.get('div:nth-of-type(2) > .pb_news_filter__itemLabel_1iwa');
-
     }
 }
 

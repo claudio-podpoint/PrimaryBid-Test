@@ -23,10 +23,9 @@ describe("Navigate to the News page", () => {
         NewsPage.getNewsContent().should('contain', 'Ocado raises £1bn as online grocery booms')
     })
 
-    it.only('All Content section can be filtered by Webinar', () => {
+    it('All Content section can be filtered by Webinar', () => {
         NewsPage.getFilterLink().trigger('mouseover').click()
         NewsPage.getWebinarOption().should('be.hidden').click({force: true})
-        NewsPage.getFilterLink().contains('Webinar')
         
     })
 })
