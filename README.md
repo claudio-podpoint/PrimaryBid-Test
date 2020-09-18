@@ -10,7 +10,7 @@
 
 ## Install dependencies
 
-#### In the terminal run --> npm install
+npm install
 
 ## Open Cypress DashBoard
 #### npx cypress open
