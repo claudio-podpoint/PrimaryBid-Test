@@ -9,7 +9,6 @@
 #### clone the repo
 
 ## Install dependencies
-
 npm install
 
 ## Open Cypress DashBoard
